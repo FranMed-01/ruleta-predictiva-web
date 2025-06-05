@@ -17,23 +17,24 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # === CONFIGURACIÓN ===
 INTERVALO_SEGUNDOS = 6
-LIMITE_NUMEROS = 800  # Cambia este valor si necesitas más
+LIMITE_NUMEROS = 10150  # Cambia este valor si necesitas más
 SHEET_ID = "1CyihTSL1PLmRC9DvVS-al17FIn9Wy5T9o-80IDLhjI0"  # 👈 Reemplaza con el ID real de tu hoja
 
 # === CREDENCIALES INCRUSTADAS ===
 json_credenciales = {
   "type": "service_account",
-  "project_id": "scraping-ruleta",
-  "private_key_id": "afff5ead20556da5196db3e07b68c5f87ee489fe",
-  "private_key": "-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDhbV3tqO84kvT9\\nPUpx9z8lXkQ6oXZxSX3zr455Vv/2Qdv+2gC31ZYp0oUqmCI2hOaQMrKGPPE5XeSw\\nACEluPEj38kHad29mIho6oE/SEEbYRlamri3Qg3ko0Dhrb2t6hHdQNVo2RCGL6ZO\\n4opnN/EBF5iwWaa4YbIyNqxq2bMV5oel4jT1fewE28bHgN/TqzVTKS9OM3X78W6D\\nIlQTnyb2wEVAIH8c6vlVbqr7HtSSgSGQlJIBG0pOVoEW3h+H3T/PYdhhm+ySNSZ1\\n0GawmQR1/xbnM2GDHAgLS6tnkW7FUwj4SbqXpmSiCJYv8QfFep0CLZrWiqZsKpdc\\nrYIJn3X9AgMBAAECggEAA4NY0Liulwsd658Q50XFzidHQ5f7PeNkpcTj9jAiPQw5\\ntCG28SZ6+Jvh8g/84yyfCzrpsqiFzzG6EU7Eis9JssLCDJjcbnVPauh8qyfNG/LK\\nGly0PubgoIzgGKREgyQACJqsuL2T7FjBwWj2ZIq9TsRiCh2GOPQM0DYvPwW1ghnW\\nIPJUDs9iUTbIBJ0ZeX/ysMKN3SvJfkD8zDa8ln/RqNyrOq/Ux8mkUkOtdgp0PoiL\\nOQCdWEFWLV/B809owroC86Z15EZkjuUr+PthNBTakMgVeXQofkTMbemT3wpFi1vE\\nOGPksqtxDIMlPbemYDCZz+505ZgsfXOnf9sz28S+YQKBgQD0GkET+oLo5f5hX+Od\\njM29im2rhrFn/h2U0NUmzVmJvyt9W9/XpcVznlJVWn8y6BKTEb3Y46ty76TPnGtP\\nXMWUDYOy2znJYI0HPZkwX17LGXQBeSleyHKznW2gtUU8iRysaW+HvSJzLtCbRb01\\nu1RoBJHbq6x+afDWe1Erq5/xOwKBgQDsahgwEYMVr6JEeGDpus+3xhTCApUa2Ryc\\nPHG9Aah/ovIAMwai4dGcIWNBJP1N3gkv3MpwCmIymLHc0wGAF66k/auhKbzVAG3r\\ni+3O2WatlrL09fwnjThccF9EBlBk9bN1lYIHxGxJBeKnJc0yVJlW8i2WDC/ZEDnZ\\nZl1pVynCJwKBgQDpHWWG6dc5CePsJEHgRQZ6e4eOpjwoHwMrCmB1BOj8Zmfm+OWF\\nMRem+cyRHLKa8AxFDU1roskqI3gWmL/Wc7dwU5OxLDE8gotMHeR80KdbeHxTp9z9\\nWppHtBFsx5BOZnbOpIZRcCtFKrEnh+tRNAxAphSRX5qEwzGv8uaquOUu3wKBgHDy\\nJuggFa4woKdxk2tW0pIL0jL2JOIUw7RotDYGKsf/wvoRZqQ+mnOrB85Bq7qdz2nM\\nY/KvI0bk6GSFcnwN1GQCxRJT7GEeuWUFDvH5rzJTgt/A/Vyv/TM8hGbtVU9Gixwr\\n91laoBkq9KPCTYw0GqYNQXYkEF/1fo28d/gxqkOVAoGBANPySfeBos4Pm0s2j0WY\\nb9t/MlsIsX876/7na5OH9bGXlyBmzOpiMf6yFCxF+rk+fleW96Ylx5ADEfDNsYPB\\nPe1DXf00vhjj0je+KwC5HGn0tSuPRGHSOzadsizhMtCgjm7TYCLQB/T8sNvX8aH1\\nQV1Gz/sVnotcOFl8vWfuS0Hl\\n-----END PRIVATE KEY-----\\n",
-  "client_email": "cuenta-ruleta@scraping-ruleta.iam.gserviceaccount.com",
-  "client_id": "115496302833819515642",
+  "project_id": "scraping-sheets-461821",
+  "private_key_id": "3912a9d477d8fff95aa9c0cfbd1d782554f51eeb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2ak1vrXg+/+Jj\nn0GRHJrnFcaKC3QRCoBJfq3o9KuLuOIDs8tRkfuR+06KUuLL5UdYougmfTQubDdD\nclZ24Kcjm43F3N6uWUvgHaySKZzFrji1cb83OSEhLwKLXBiuS3Iy3iWBvSOLKETE\nLl5KHd3Kkuq6bT1z/s3on5c9SdSjfCv73zjHlaXLBUYk8PGD48IMdiXxmYDEknfy\nsjgck/sAwzcOuJdz9BvkT2oii/N3wyGA60uR7v6aAcVX4nN46QxmwPqWE2DoLO0F\nIqAg7u/KQ/6wnIfUFlygh05Cpktahkb1SDDKl6a4wcVn6nVnTiIC1HGpH3d24LWb\nszuoulY3AgMBAAECggEASvnsdB+P0g0oxxu5PmTMgnjfzvOgNDTlv8+SubJ/JAHM\n3Aq1YgSnqzvo70/cKkRGC/eBhfhmT0JpgI5pXZk++ZLBNfdvi6fmWOq5eKYj6tiO\nNH3ZQ2B27oW8/PzQpCsceC34qpfMGTFm+l+4n6wg8ldqpU+rN5cemSOnbSiAfuUj\nIoCahxT2+NxUvVGAElbaEhGN6tFG8RABbBzUzhMt7YmHqlcwl/NYveBP/IgaxGii\nFsXqEm8vPTc4biRvjS6I+JwKiIQ8V8LynGtcH7QMOnGzoODuySmf5cGqAj5sFlNS\nmursh6aJzm5DI9vGT0FM/5YQWZ99Qr6A+I3I/+tb0QKBgQDwdTRrU0Ym0r2lhZuP\nC/MCFmFcjC/qrxlJhTBxassva68I9vf5FzSVC2WBQxP6oSADeIwPcb4hJ2PousfR\nBpFBxhTLp19FwC5ur/CpDhCFsyyf8aVxQ5IxFhore31z4kO1FyzRH25qIjJWUv/W\nRpecsbQfWvorgRSJqK4AwBMNTwKBgQDCNK5/yx8rW7uQ+5LhDJtbCH5L4ydKgfBo\n3VfziwnAsZ+bNJtdabihSMy8F9pcTH9qtr69E9pKMbsWwOyyYN/YK0E6Um/mUOBH\nH2BRnUwk79nygNgNaV3oZM41W8YMSyH97nBNutAd1aeHnna2oUqpTu4pbGqWx7xN\no6OCHO3+mQKBgG6LY3Ln0LtubPNYjiBgPPK7uTzj0e+RWg27pn6tuwVs+wYjC/M+\n4NSYbazUWq4BPwd5duJuxxrU0hCfNdd5rnPPjaXmp10Ysf/+8KO3rI7axWwumoGM\nr/vTDmrpFc6ducTaB6eITKmMWRnohGdNAsxtwcIcgCBZ8kgq/PupUdjvAoGAMzPu\nmhT019qsvlIF7L4FK+A2ZE20q0lNGGjbaoPLA3oRabtaByv7mNJ34FOtp84nffxG\nl9VnJU6tVBdzkKhH/FeTMAxSInhKWZYlL/939vkiDnT4Abk5IC+LyreypMUeZjP6\nehP6EROmwvP9urMV20PLOTKze6OXuySc1I5KFWkCgYEA7mJNfZViUzM8WAUfD3yD\nO45TlthLP93USV/y6AtxyNgl2r+YViFt2ntb/tpqQIo8DXXt5qTOEB8I8bDM8a0X\nmsDM/CJwBdeFFzxUTp9GsfpbGiTc8xKSSIBTo/D7Kh4KuFQSxzGwWC+OBhKq+f0X\nZsNDpaPeLv4SV9dP9CYwn3Q=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sheets-bot@scraping-sheets-461821.iam.gserviceaccount.com",
+  "client_id": "115275273133076245999",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cuenta-ruleta%40scraping-ruleta.iam.gserviceaccount.com",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sheets-bot%40scraping-sheets-461821.iam.gserviceaccount.com",
   "universe_domain": "googleapis.com"
 }
+
 
 json_credenciales["private_key"] = json_credenciales["private_key"].replace("\\n", "\n")
 
@@ -143,6 +144,7 @@ def esta_pegado(historial, nuevo):
 
 # === INICIO ===
 historial_numeros = []
+numeros_guardados_en_ejecucion = 0  # Nuevo contador local
 ciclos_iguales = 0  # 👈 Esto debe ir fuera del if también
 
 if __name__ == "__main__":
@@ -160,6 +162,7 @@ if __name__ == "__main__":
             valores = [[str(n), ahora] for n in iniciales]
             sheet.insert_rows(valores, 2)
             print(f"✅ Guardados {len(valores)} números en bloque.")
+            numeros_guardados_en_ejecucion += len(valores)  # 👈 Contar los iniciales
 
             firma_anterior = generar_firma([str(n) for n in iniciales[:5]])
         else:
@@ -172,7 +175,7 @@ if __name__ == "__main__":
 
     try:
         while True:
-            if contar_numeros_actuales() >= LIMITE_NUMEROS:
+            if numeros_guardados_en_ejecucion >= LIMITE_NUMEROS:
                 print("🎯 Límite alcanzado. Cerrando script.")
                 driver.quit()
                 exit(0)
@@ -186,6 +189,8 @@ if __name__ == "__main__":
                     firma_anterior = nueva_firma
                     if guardar_en_sheets(str(numero_nuevo)):
                         historial_numeros.append(str(numero_nuevo))
+                        numeros_guardados_en_ejecucion += 1  # Sumar al contador solo si fue guardado
+                        print(f"🧮 Números guardados en esta ejecución: {numeros_guardados_en_ejecucion}/{LIMITE_NUMEROS}")
                         if len(historial_numeros) >= 10 and all(n == str(numero_nuevo) for n in historial_numeros[-10:]):
                             print("⚠️ Mismo número repetido 10 veces. Reiniciando navegador por seguridad...")
                             try:
